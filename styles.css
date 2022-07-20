@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --coolblack:rgb(52, 52, 52);
+    --mightorange:#FF5733;
+}
+
+.keys{
+    display:flex;
+    flex:1;
+    height:70vh;
+    justify-content: center;
+    align-items:center;
+    column-gap:1.5rem;
+    border:0.2rem solid var(--coolblack);
+    
+}
+.key{
+    border: 0.4rem solid var(--coolblack);
+    border-radius:0.5rem;
+    font-size:1.5rem;
+    padding: 1rem 0.5rem;
+    width:7.8rem;
+    text-align: center;
+    
+}
+
+.key:hover{
+    border: 0.4rem solid blue;
+}
+kbd{
+    display:block;
+}
+
+p{
+    position:absolute;
+    bottom:30rem;
+}
+
+.current-sound {
+    transform: scale(1.1);
+    border-color: var(--mightorange);
+    box-shadow: 0 0 1rem var(--mightorange);
+}
